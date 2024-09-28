@@ -3,23 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Portada</title>
+    <title>Tolkienitas</title>
     <link rel="stylesheet" href="intestyle.css">
 </head>
 <body>
-    <div style="background-color: rgb(146, 146, 146); border: 8px; border-style:ridge; align-content: center; padding: 3px;" >
-        <a href="inte.html">Home</a>
-        <a href="contact.html">Iniciar Sesion</a>
+<header>
+    <div class="encabezado">
+        <div class="logo">
+            <img src="Imagenes/pngegg.png" alt="El anillo de Sauron" style="width: 150px; height: 150px;">
+            <h1 style="font-size: 50px;"><span style="color:#f97500">Tolkien</span><span style="color: red">itas</span></h1>
+        </div>
+    <nav>
+        <a href="inte.html">Inicio</a>
+        <a href="productos.html">Libros</a>
+        <a href="contact.html">Contacto</a>
+    </nav>
+</div>
+</header>
+    <div style="  display: flex; justify-content: space-between; align-content: space-around; margin-left: 200px; margin-right: 200px;">
+    <img src="Imagenes/comunidadanillo.png" alt="La Comunidad del Anillo" height="380" width="300" id="carr">
+    <img src="Imagenes/2torres.png" alt="Las Dos Torres" height="380" width="300">
+    <img src="Imagenes/retornorey.png" alt="El Retorno del Rey" height="380" width="300">
     </div>
-    <div style="background-color: rgb(146, 146, 146); border: 10px; border-style:ridge; align-content: center;">
-        <h2>Busca tu nuevo libro favorito</h2> <br>
-    </div>
-    <div style="background-color: rgb(146, 146, 146); border: 10px; border-style:ridge; align-content: center; padding: 10px; justify-content: center;">
-    <img src="Imagenes/comunidadanillo.png" alt="La Comunidad Del Anillo"height="280" width="200">
-    <img src="Imagenes/2torres.png" alt="Las Dos Torres"height="280" width="200">
-    <img src="Imagenes/retornorey.png" alt="El Retorno Del Rey" height="280" width="200">
-    </div>
-    
-    
+<div style=" display: flex; justify-content: space-between space-evenly">     
+    <div style=" margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="text-align: center; margin: 10px; padding: 10px;">
+        En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. 
+        Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. 
+        Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. 
+        Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.
+    </p></div><div style=" text-align: center;margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="margin: 10px; padding: 10px;">Los hobbits Frodo y Sam descubren que Gollum les está siguiendo. 
+        La criatura les promete guiarlos hasta las puertas de Mordor si después lo dejan libre. 
+        Aragorn, el elfo Legolas y Gimli el enano llegan al reino de Rohan y descubren que el rey Theoden está bajo el conjuro de Sarumán. 
+        El traidor quiere el control del reino para continuar con sus planes en Mordor, a la espera de la guerra en la Tierra Media.
+    </p></div><div style="text-align: center; margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="margin: 10px; padding: 10px;">La batalla por la Tierra Media ha empezado. 
+        Las fuerzas de Saruman han sido destruidas y por primera vez parece que hay una pequeña esperanza. 
+        Sin embargo, el poder de Sauron crece y su interés se centra en Gondor, el último reducto de los hombres, cuyo heredero es Aragorn. 
+        Mientras, Frodo y Sam, guiados por Gollum, siguen su peligrosa misión a través de Mordor para destruir el anillo.
+    </p>
+</div>
 </body>
 </html>
+
+<!--ignora todo este codigo fallido, lo dejo para copiar ciertas cosas que hayan funcionado, intente el carrousel para cambiar entre los 3 libros pero ahora me quiero pegar un corchaso
+    <div style="  display: flex; justify-content: space-between; align-content: space-around; margin-left: 200px; margin-right: 200px;">
+        <div style="align-items: center; justify-content: space-evenly; display: flex; ">
+             <input type="button" id="izq" value="Libro Anterior" onclick="funcion()">
+             <img src="Imagenes/comunidadanillo.png" alt="La Comunidad del Anillo" height="380" width="300" id="carr">
+             <input type="button" id="der" value="Siguiente Libro" onclick="funcion()">
+        </div>
+    <img src="Imagenes/2torres.png" alt="Las Dos Torres" height="380" width="300">
+    <img src="Imagenes/retornorey.png" alt="El Retorno del Rey" height="380" width="300">
+    </div>
+    <div style=" margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="text-align: center; margin: 10px; padding: 10px;" id="txt">
+        En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. 
+        Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. 
+        Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. 
+        Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.
+    </p>
+    </div>
+    <script>
+        function funcion(){
+            if("carr".link == "Imagenes/comunidadanillo.png"){
+                carr.link =  "Imagenes/2torres.png"
+            }
+        }
+    </script>
+    <div style=" display: flex; justify-content: space-between space-evenly">       este era el codigo que iba a usar pero decidi hacer un carrousel para que se vea mejor
+    <div style=" margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="text-align: center; margin: 10px; padding: 10px;">En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. 
+        Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. 
+        Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. 
+        Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.
+    </p></div><div style=" text-align: center;margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="margin: 10px; padding: 10px;">Los hobbits Frodo y Sam descubren que Gollum les está siguiendo. 
+        La criatura les promete guiarlos hasta las puertas de Mordor si después lo dejan libre. 
+        Aragorn, el elfo Legolas y Gimli el enano llegan al reino de Rohan y descubren que el rey Theoden está bajo el conjuro de Sarumán. 
+        El traidor quiere el control del reino para continuar con sus planes en Mordor, a la espera de la guerra en la Tierra Media.
+    </p></div><div style="text-align: center; margin: 50px; background-color: rgb(206, 212, 207);">
+    <p style="margin: 10px; padding: 10px;">La batalla por la Tierra Media ha empezado. 
+        Las fuerzas de Saruman han sido destruidas y por primera vez parece que hay una pequeña esperanza. 
+        Sin embargo, el poder de Sauron crece y su interés se centra en Gondor, el último reducto de los hombres, cuyo heredero es Aragorn. 
+        Mientras, Frodo y Sam, guiados por Gollum, siguen su peligrosa misión a través de Mordor para destruir el anillo.
+    </p>
+-->

@@ -124,5 +124,34 @@ textarea{
     background-color: aliceblue;
     align-self: center;
 }
+.carousel { 
+    position: relative; 
+    width: 2500px;
+    overflow: hidden; 
+}
+.slides { 
+    display: flex; 
+    justify-content: center; }
+.slide { 
+    min-width: 300px; 
+    box-sizing: border-box; 
+}
+.slide { 
+    display: none; 
+}
+.active { 
+    display: block; 
+} 
+button { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+#ant { 
+    left: 10px; 
+}
+#sig { 
+    right: 10px; 
+}
 
 

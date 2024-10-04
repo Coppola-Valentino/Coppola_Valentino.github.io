@@ -32,11 +32,44 @@
 
             <h3 style="text-align: center;">¡Unite a nosotros en este viaje a la Tierra Media!</h3>
         </div>
-        <div>
-            <img src="Imagenes/argonath.jpg" alt="Los Argonautas">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="Imagenes/argonath.jpg" width="800" alt="El Argonauta">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes/Hobbiton.jpg" width="800" height="450"  alt="Hobbiton">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes/Imagen1.jpg" width="800" alt="Me olvide">
+                </div>
+            </div>
+            <button id="sig"> > </button>
+            <button id="ant"> < </button>
         </div>
     </div>
     
     
+    <script>
+        let index = 0; 
+        const slides = document.querySelectorAll('.slide');
+        function updateCarousel() {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index); 
+            });
+        }
+         
+        document.getElementById('sig').onclick = () => {
+            index = (index + 1) % slides.length; 
+            updateCarousel(); 
+        };
+
+        document.getElementById('ant').onclick = () => {
+            index = (index - 1 + slides.length) % slides.length; 
+            updateCarousel(); 
+        };
+        
+        updateCarousel();
+        </script>
 </body>
 </html>

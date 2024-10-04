@@ -3,7 +3,9 @@
 }
 
 body{
-    background-color: #061f06;
+    /*background-color: #061f06;*/
+    background-image: url(Imagenes/undefined\ -\ Imgur.jpg);
+    background-position: center;
 }
 
 /* Encabezado*/

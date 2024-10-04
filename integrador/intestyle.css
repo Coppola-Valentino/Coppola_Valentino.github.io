@@ -41,6 +41,13 @@ header nav a.activo {
     color: #f97500;
 }
 
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
 /* Contenido ppal Inicio*/
 .contenedor_ppal{
     display: flex;
@@ -100,7 +107,7 @@ header nav a.activo {
     margin: 25px
 }
 
-.par >input{
+.par > input{
     border-radius: 7px;
     width: 150px;
     height: 30px;
@@ -116,6 +123,14 @@ label{
 textarea{
     width: 600px; height: 200px;
     border-radius: 10px;
+}
+
+.cierre form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
 }
 
 .boton{

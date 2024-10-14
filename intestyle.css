@@ -167,23 +167,35 @@ textarea{
 
 /*Estilos carrousel*/
 .carousel { 
+    /*display: flex;
+    justify-content: center;*/
     position: relative; 
     width: 2500px;
     overflow: hidden; 
 }
-.slides { 
+
+#imagen{
+    width:800px;
+    height:450px;
+}
+
+/*.slides { 
     display: flex; 
     justify-content: center; }
+
 .slide { 
     min-width: 300px; 
     box-sizing: border-box; 
 }
+
 .slide { 
     display: none; 
 }
+
 .active { 
     display: block; 
-} 
+} */
+
 button { 
     position: absolute; 
     top: 50%; 

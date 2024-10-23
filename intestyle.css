@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover{
-    color: #f97500;
+    color: #DAA520;
 }
 
 /* Contenido ppal Inicio*/
@@ -64,7 +64,6 @@ p{
 h3 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke
 }
 
 
@@ -100,6 +99,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;    
+}
+
+.tituloForm{
+    color: aliceblue;
 }
 
 
@@ -143,6 +146,12 @@ textarea{
     background-color: aliceblue;
     align-self: center;
     border: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #DAA520;
+    color: aliceblue;
 }
 
 .error {
@@ -161,14 +170,12 @@ textarea{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
     width: 700px;
-    align-content: center;
+    align-content: flex-start;
     
 }
 
 /*Estilos carrousel*/
 .carousel { 
-    /*display: flex;
-    justify-content: center;*/
     position: relative; 
     width: 2500px;
     overflow: hidden; 
@@ -179,27 +186,17 @@ textarea{
     height:450px;
 }
 
-/*.slides { 
-    display: flex; 
-    justify-content: center; }
-
-.slide { 
-    min-width: 300px; 
-    box-sizing: border-box; 
-}
-
-.slide { 
-    display: none; 
-}
-
-.active { 
-    display: block; 
-} */
-
 button { 
     position: absolute; 
     top: 50%; 
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #DAA520;
+    color: white;
+    cursor: pointer;
 }
 #ant { 
     left: 10px; 
@@ -207,5 +204,7 @@ button {
 #sig { 
     right: 10px; 
 }
+
+
 
 

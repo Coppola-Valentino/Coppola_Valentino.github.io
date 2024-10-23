@@ -31,7 +31,7 @@ function validar (){
     if(!bandera){
         let resultado = document.getElementById("enviado");
         let txtIngresado = document.createElement ('p')
-        txtIngresado.innerHTML = 'Tu nombre: '+ nombre + ' - Tu email: '+email+ ' - Tu teléfono: '+telefono+ ' - Tu aporte: '+aporte;
+        txtIngresado.innerHTML = `Tu nombre: ${nombre}<br>Tu email: ${email} <br>Tu teléfono: ${telefono} <br>Tu aporte: ${aporte}`;
         resultado.appendChild(txtIngresado);
         resultado.style.display ="block";
 

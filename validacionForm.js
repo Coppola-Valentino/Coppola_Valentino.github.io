@@ -54,11 +54,12 @@ function limpiar(e){
 //agregar clase active al nav
 const links = document.querySelectorAll('nav a');
 
-links.forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add('active');
+for (link of links){
+    if (link.href === window.location.href){
+        link.classList.add('activa');
+        break;
     }
-});
+}
 
 // script de carrousel
 

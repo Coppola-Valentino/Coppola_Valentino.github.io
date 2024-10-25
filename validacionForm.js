@@ -1,3 +1,4 @@
+//formulario de contacto
 function validar (){
     let bandera = false;
 
@@ -49,3 +50,38 @@ function limpiar(e){
     let errorSpan = e.target.nextSibling;
     errorSpan.style.display="none";
 }
+
+//agregar clase active al nav
+const links = document.querySelectorAll('nav a');
+
+links.forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    }
+});
+
+// script de carrousel
+
+    const imagenes = ['Imagenes/argonath.jpg','Imagenes/Hobbiton.jpg','Imagenes/Imagen1.jpg','Imagenes/casa.jpeg','Imagenes/elUnico.jpeg','Imagenes/mapa.jpeg','Imagenes/marchaComunidad.jpeg','Imagenes/smaug.jpeg', 'Imagenes/valle.jpeg'];
+
+    let index=0;
+    const imagen = document.getElementById("imagen");
+
+    imagen.src=imagenes[index];
+
+    function aLaDerecha(){
+        index ++;
+        if(index>imagenes.length-1){
+            index = 0;
+        }
+        imagen.src=imagenes[index];
+    }
+
+    function aLaIzquierda(){
+        index--;
+        if(index<0){
+            index = imagenes.length-1;
+        }
+        imagen.src=imagenes[index];
+    }
+    
